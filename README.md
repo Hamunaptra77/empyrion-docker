@@ -7,7 +7,7 @@ Wenn Sie das Image ausführen, mounten Sie das Volume /home/user/Steam, um die E
 Beispielaufruf:
 
 ```
-
+cd /home
 mkdir -p gamedir
 docker run -di -p 30000:30000/udp -p 30001:30001/udp -p 30002:30002/udp -p 30003:30003/udp -p 30004:30004/udp --restart unless-stopped -v $PWD/gamedir:/home/user/Steam hamunaptra77/empyrion-server
 
